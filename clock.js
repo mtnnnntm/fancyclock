@@ -12,11 +12,11 @@ Clock.prototype.init = function(){
     var increment = 120;
 
     var maxPoints = 0;
-    for (var d = 0; d <= 100; d++)
+    for (var d = 0; d <= 9; d++)
     {
-        var points = font.textToPoints(d + "", 0, windowHeight/4, 200, { sampleFactor: sampleFactor });
+        var points = font.textToPoints(d + "", 0, 0, 192, { sampleFactor: sampleFactor });
         // console.log("points: " + points.length);
-        var dd = { d: d, points: [], maxy: 0, miny: 3000 };
+        var dd = { d: d, points: [], maxy: 0, miny: 10000 };
         for (var i = 0; i < points.length; i++) {
             var pt = points[i];
             var point = { x: pt.x, y: pt.y };
@@ -59,7 +59,7 @@ Clock.prototype.init = function(){
         {
             var point = dd.points[p];
             if (d === 0) {
-                point.color = floor(map(point.y, dd.miny, dd.maxy, 0, 450));
+                point.color = floor(map(point.y, dd.miny, dd.maxy, 0, 360));
             }
             else {
                 point.color = this.targets[0].points[p].color;
@@ -131,7 +131,7 @@ Clock.prototype.show = function() {
     }
 
     this.colon1.show();
-    this.colon2.show();F
+    this.colon2.show();
 }
 
 Clock.prototype.shuffle = function(arr) {
