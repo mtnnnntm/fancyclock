@@ -16,7 +16,7 @@ Clock.prototype.init = function(){
     {
         var points = font.textToPoints(d + "", 0, windowHeight/4, 200, { sampleFactor: sampleFactor });
         // console.log("points: " + points.length);
-        var dd = { d: d, points: [], maxy: 0, miny: 8000 };
+        var dd = { d: d, points: [], maxy: 0, miny: 3000 };
         for (var i = 0; i < points.length; i++) {
             var pt = points[i];
             var point = { x: pt.x, y: pt.y };
