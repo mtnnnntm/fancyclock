@@ -5,7 +5,7 @@ function Colon(offsetx, offsety) {
 }
 
 Colon.prototype.init = function () {
-    var points = font.textToPoints(":", 0, 0, 250, {
+    var points = font.textToPoints(":", windowWidth/4, windowHeight/4, 250, {
         sampleFactor: sampleFactor
     });
     
