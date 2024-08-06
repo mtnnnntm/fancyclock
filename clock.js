@@ -9,7 +9,7 @@ function Clock() {
 Clock.prototype.init = function(){
     var offsetx = 20;
     var offsety = 150;
-    var increment = 120;
+    var increment = 150;
 
     var maxPoints = 0;
     for (var d = 0; d <= 9; d++)
