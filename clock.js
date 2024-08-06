@@ -14,7 +14,7 @@ Clock.prototype.init = function(){
     var maxPoints = 0;
     for (var d = 0; d <= 9; d++)
     {
-        var points = font.textToPoints(d + "", windowWidth/2, windowHeight/2, 250, { sampleFactor: sampleFactor });
+        var points = font.textToPoints(d + "", 0, 0, 250, { sampleFactor: sampleFactor });
         // console.log("points: " + points.length);
         var dd = { d: d, points: [], maxy: 0, miny: 10000 };
         for (var i = 0; i < points.length; i++) {
