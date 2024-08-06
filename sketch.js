@@ -1,13 +1,15 @@
 var font;
 var clock;
-var sampleFactor = 0.1;
+var sampleFactor = 0.15;
 
 function preload() {
+
     font = loadFont("ROBOTO-BOLD.TTF");
+
 }
 
 function setup() {
-    var canvas = createCanvas(windowWidth, windowHeight);
+    var canvas = createCanvas(900, 180);
     canvas.parent("canvas-parent");
     
     background(153, 0, 102);
