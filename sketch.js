@@ -7,7 +7,7 @@ function preload() {
     // font = loadFont("fonts/SpicyRice-Regular.ttf");
     // font = loadFont("fonts/PatrickHand-Regular.ttf");
     // font = loadFont("fonts/ArchivoBlack-Regular.ttf");
-    font = loadFont("fonts/BreeSerif-Regular.ttf");
+    font = loadFont("fonts/ROBOTO-BOLD.TTF");
     // font = loadFont("fonts/FredokaOne-Regular.ttf");
     // font = loadFont("fonts/Rokkitt-Black.ttf");
     // font = loadFont("fonts/Rokkitt-Bold.ttf");
