@@ -12,9 +12,9 @@ Clock.prototype.init = function(){
     var increment = 120;
 
     var maxPoints = 0;
-    for (var d = 0; d <= 9; d++)
+    for (var d = 0; d <= 20; d++)
     {
-        var points = font.textToPoints(d + "", 0, 0, 192, { sampleFactor: sampleFactor });
+        var points = font.textToPoints(d + "", 0, 0, 300, { sampleFactor: sampleFactor });
         // console.log("points: " + points.length);
         var dd = { d: d, points: [], maxy: 0, miny: 10000 };
         for (var i = 0; i < points.length; i++) {
