@@ -14,7 +14,7 @@ function preload() {
 }
 
 function setup() {
-    var canvas = createCanvas(1920, 500);
+    var canvas = createCanvas(windowWidth, windowHeight);
     canvas.parent("canvas-parent");
     
     background(153, 0, 102);
